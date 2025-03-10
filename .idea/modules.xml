@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/servlet/spring-boot/java/hello-security/hello-security.iml" filepath="$PROJECT_DIR$/servlet/spring-boot/java/hello-security/hello-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_security_samples_typing.iml" filepath="$PROJECT_DIR$/spring_security_samples_typing.iml" />
     </modules>
   </component>
