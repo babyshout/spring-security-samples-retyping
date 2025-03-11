@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/reactive/webflux/java/hello-security-webflux" />
     <file type="web" url="file://$PROJECT_DIR$/servlet/spring-boot/java/hello-security" />
+    <file type="web" url="file://$PROJECT_DIR$/servlet/spring-boot/java/jwt/login/servletJwtLogin" />
   </component>
   <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
