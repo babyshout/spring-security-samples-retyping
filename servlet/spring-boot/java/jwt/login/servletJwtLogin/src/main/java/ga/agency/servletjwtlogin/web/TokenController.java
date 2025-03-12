@@ -20,9 +20,9 @@ public class TokenController {
     JwtEncoder encoder;
 
     @PostMapping("/token")
-    public String token(Authentication authentication, UserDetails authenticatedPrincipal) {
+    public String token(Authentication authentication) {
         Instant now = Instant.now();
-        long expire = 36000L;
+        long expiry = 36000L;
         // @formatter:off
         String scope = authentication.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
@@ -30,7 +30,7 @@ public class TokenController {
         JwtClaimsSet claims = JwtClaimsSet.builder()
                 .issuer("self")
                 .issuedAt(now)
-                .expiresAt(now.plusSeconds(expire))
+                .expiresAt(now.plusSeconds(expiry))
                 .subject(authentication.getName())
                 .claim("scope", scope)
                 .build();
