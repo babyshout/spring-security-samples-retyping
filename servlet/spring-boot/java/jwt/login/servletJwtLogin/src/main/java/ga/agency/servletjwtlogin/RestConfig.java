@@ -59,7 +59,7 @@ public class RestConfig {
         // @formatter:off
         return new InMemoryUserDetailsManager(
                 User.withUsername("user")
-                        .password("password")
+                        .password("{noop}password")
                         .authorities("app")
                         .build()
 //                User.

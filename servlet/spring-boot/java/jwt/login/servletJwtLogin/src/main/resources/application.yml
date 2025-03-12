@@ -12,3 +12,9 @@ logging:
 jwt:
   private.key: classpath:app.key
   public.key: classpath:app.pub
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
