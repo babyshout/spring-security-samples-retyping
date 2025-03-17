@@ -13,6 +13,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/servlet/java-configuration/hello-security-java-configuration" />
+        <option name="gradleJvm" value="corretto-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/servlet/java-configuration/hello-security-java-configuration" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/servlet/spring-boot/java/hello-security" />
         <option name="gradleJvm" value="corretto-21" />
         <option name="modules">
