@@ -30,11 +30,24 @@ dependencies {
 //	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 //	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	implementation platform(libs.org.springframework.spring.framework.bom)
+	implementation platform("org.springframework:spring-framework-bom:6.2.0-RC1")
+	implementation platform("org.springframework.security:spring-security-bom:6.4.0-SNAPSHOT")
 	implementation platform("org.junit:junit-bom:5.10.5")
 
 	implementation "org.springframework.security:spring-security-config"
 	implementation "org.springframework.security:spring-security-web"
+
+	providedCompile "jakarta.servlet:jakarta.servlet-api:6.1.0"
+	providedCompile "org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0"
+
+	testImplementation "org.assertj:assertj-core:3.26.3"
+	testImplementation "org.springframework:spring-test"
+	testImplementation "org.springframework.security:spring-security-test"
+	testImplementation("org.junit.jupiter:junit-jupiter-api")
+
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+
+	integTestImplementation "org.seleniumhq.selenium:htmlunit-driver:4.13.0"
 }
 
 //tasks.named('test') {
